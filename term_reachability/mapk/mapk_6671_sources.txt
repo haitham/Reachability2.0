@@ -1,0 +1,3 @@
+hsa:10368|hsa:10369|hsa:27091|hsa:27092|hsa:55799|hsa:59283|hsa:59284|hsa:59285|hsa:773|hsa:774|hsa:775|hsa:776|hsa:777|hsa:778|hsa:779|hsa:781|hsa:782|hsa:783|hsa:784|hsa:785|hsa:786|hsa:8911|hsa:8912|hsa:8913|hsa:9254|hsa:93589
+hsa:7040|hsa:7042|hsa:7043
+hsa:2246|hsa:2247|hsa:2248|hsa:2249|hsa:2250|hsa:2251|hsa:2252|hsa:2253|hsa:2254|hsa:2255|hsa:2256|hsa:2257|hsa:2258|hsa:2259|hsa:26281|hsa:26291|hsa:27006|hsa:8074|hsa:8817|hsa:8822|hsa:8823|hsa:9965

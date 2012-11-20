@@ -1,0 +1,6 @@
+hsa:10368|hsa:10369|hsa:27091|hsa:27092|hsa:55799|hsa:59283|hsa:59284|hsa:59285|hsa:773|hsa:774|hsa:775|hsa:776|hsa:777|hsa:778|hsa:779|hsa:781|hsa:782|hsa:783|hsa:784|hsa:785|hsa:786|hsa:8911|hsa:8912|hsa:8913|hsa:9254|hsa:93589
+hsa:2768|hsa:55970
+hsa:5879|hsa:5880|hsa:5881|hsa:998
+hsa:1950
+hsa:5154|hsa:5155
+hsa:356

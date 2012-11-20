@@ -1,0 +1,3 @@
+hsa:7040|hsa:7042|hsa:7043
+hsa:2246|hsa:2247|hsa:2248|hsa:2249|hsa:2250|hsa:2251|hsa:2252|hsa:2253|hsa:2254|hsa:2255|hsa:2256|hsa:2257|hsa:2258|hsa:2259|hsa:26281|hsa:26291|hsa:27006|hsa:8074|hsa:8817|hsa:8822|hsa:8823|hsa:9965
+hsa:3552|hsa:3553

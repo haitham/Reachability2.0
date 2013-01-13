@@ -10,13 +10,19 @@ open "#{dataset}/#{dataset}_hsa_string.txt" do |f|
 end
 
 deltas.each do |delta|
-	open "#{dataset}/#{dataset}_hsa_delta#{delta}.txt", "w" do |f|
-		lines.each do |line|
-			prob = line[2].to_f
-			max = prob + delta > 1.0 ? 1.0 : prob + delta
-			min = prob - delta < 0.0 ? 0.0 : prob - delta
-			line[2] = min + rand * (max - min)
-			f.puts line.join " "
+	shuffled = edges.clone
+	1.upto (delta*edges.size/2).ceil do
+		while true
+			edge1 = shuffled[rand*shuffled.size]
+			edge2 = shuffled[rand*shuffled.size]
+			next if shuffled.map{|e|
+				(e[:from] == edge1[:from] and e[:to] == edge2[:to]) or (e[:from] == edge2[:from] and e[:to] == edge1[:to])
+			}.any?
+			rand > 0.5 ? (edge1[:from], edge2[:from] = edge2[:from], edge1[:from]) : (edge1[:to], edge2[:to] = edge2[:to], edge1[:to])
+			break
 		end
+	end
+	open "#{dataset}/#{dataset}_hsa_delta#{delta}.txt", "w" do |f|
+		shuffled.each{|e| f.puts "#{e[:from]} #{e[:to]} #{e[:weight]}"}
 	end
 end

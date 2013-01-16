@@ -11,7 +11,7 @@ end
 
 deltas.each do |delta|
 	shuffled = edges.clone
-	1.upto (delta*edges.size/2).ceil do
+	1.upto((delta.to_f*edges.size/2.0).ceil) do
 		while true
 			edge1 = shuffled[rand*shuffled.size]
 			edge2 = shuffled[rand*shuffled.size]

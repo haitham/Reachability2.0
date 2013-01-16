@@ -1,6 +1,7 @@
 dataset = ARGV[0]
+version = ARGV[1] || ""
 table = []
-open "#{dataset}/delta0.out" do |f|
+open "#{dataset}/deltaref.out" do |f|
 	until (line = f.gets).nil?
 		next if line.strip.empty?
 		parts = line.split.map{|p| p.strip}
@@ -20,11 +21,11 @@ deltas.each do |delta|
 		end
 	end
 end
-open "#{dataset}/summary.out", "w" do |f|
+open "#{dataset}/summary#{version}.out", "w" do |f|
 	f.puts "#{sprintf "%-5s", "#s"}#{sprintf "%-5s", "t"}#{sprintf "%-11s", "P_ref"}#{deltas.map{|d| sprintf "%-22s", "d=#{d}"}.join}"
 	table.each_with_index do |s, i|
 		s.each_with_index do |t, j|
-			next if t[:ref].zero?
+			next if t[:ref].zero? and deltas.map{|d| t[d].zero?}.all?
 			f.puts "#{sprintf "%-5s", i}#{sprintf "%-5s", j}#{sprintf "%-11s", t[:ref]}#{deltas.map{|d| sprintf "%-22s", t[d]}.join}"
 		end
 	end

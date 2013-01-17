@@ -7,28 +7,25 @@ set xrange [0.04:0.52] noreverse
 set ylabel "average reachability change"
 
 set key top
-set yrange [-0.62:0.01]
+set yrange [-0.25:-0.025]
 set output "avg.eps"
 plot "wnt/average.out" using 1:2 with line smooth unique title "Wnt",\
-	 "mapk/average.out" using 1:2 with line smooth unique title "MAPK",\
 	 "erbb/average.out" using 1:2 with line smooth unique title "ErbB"
 set output
 !epstopdf avg.eps
 
 set key bottom
-set yrange [0.05:0.7]
+set yrange [0.05:0.45]
 set output "abs_avg.eps"
 plot "erbb/average.out" using 1:3 with line smooth unique title "ErbB",\
-	 "mapk/average.out" using 1:3 with line smooth unique title "MAPK",\
 	 "wnt/average.out" using 1:3 with line smooth unique title "Wnt"
 set output
 !epstopdf abs_avg.eps
 
 set key bottom
-set yrange [1.5:7.8]
+set yrange [1.5:7]
 set output "norm.eps"
 plot "erbb/average.out" using 1:4 with line smooth unique title "ErbB",\
-	 "mapk/average.out" using 1:4 with line smooth unique title "MAPK",\
 	 "wnt/average.out" using 1:4 with line smooth unique title "Wnt"
 set output
 !epstopdf norm.eps
@@ -38,46 +35,41 @@ set output
 set ylabel "Percentage of changes exceeding threshold"
 
 set key bottom
-set yrange [0.25:1.01]
+set yrange [0.15:0.8]
 set output "threshold0.05.eps"
 plot "erbb/threshold.out" using 1:2 with line smooth unique title "ErbB",\
-	 "mapk/threshold.out" using 1:2 with line smooth unique title "MAPK",\
 	 "wnt/threshold.out" using 1:2 with line smooth unique title "Wnt"
 set output
 !epstopdf threshold0.05.eps
 
 set key bottom
-set yrange [0.1:1.01]
+set yrange [0.1:0.7]
 set output "threshold0.1.eps"
 plot "erbb/threshold.out" using 1:3 with line smooth unique title "ErbB",\
-	 "mapk/threshold.out" using 1:3 with line smooth unique title "MAPK",\
 	 "wnt/threshold.out" using 1:3 with line smooth unique title "Wnt"
 set output
 !epstopdf threshold0.1.eps
 
 set key bottom
-set yrange [0.1:1.01]
+set yrange [0.1:0.7]
 set output "threshold0.15.eps"
 plot "erbb/threshold.out" using 1:4 with line smooth unique title "ErbB",\
-	 "mapk/threshold.out" using 1:4 with line smooth unique title "MAPK",\
 	 "wnt/threshold.out" using 1:4 with line smooth unique title "Wnt"
 set output
 !epstopdf threshold0.15.eps
 
 set key bottom
-set yrange [0.1:1.01]
+set yrange [0.1:0.7]
 set output "threshold0.2.eps"
 plot "erbb/threshold.out" using 1:5 with line smooth unique title "ErbB",\
-	 "mapk/threshold.out" using 1:5 with line smooth unique title "MAPK",\
 	 "wnt/threshold.out" using 1:5 with line smooth unique title "Wnt"
 set output
 !epstopdf threshold0.2.eps
 
 set key bottom
-set yrange [0.1:1.01]
+set yrange [0.1:0.65]
 set output "threshold0.25.eps"
 plot "erbb/threshold.out" using 1:6 with line smooth unique title "ErbB",\
-	 "mapk/threshold.out" using 1:6 with line smooth unique title "MAPK",\
 	 "wnt/threshold.out" using 1:6 with line smooth unique title "Wnt"
 set output
 !epstopdf threshold0.25.eps

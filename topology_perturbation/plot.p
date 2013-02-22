@@ -1,3 +1,4 @@
+set key right
 set size 0.6,0.6
 set style function linespoints
 set xlabel "delta"
@@ -75,7 +76,16 @@ set output
 !epstopdf threshold0.25.eps
 
 
+##Color PNG versions
 
-
-
+set term png size 1280,960 transparent truecolor linewidth 3 24
+set size 1,1
+set xlabel "shuffled edges"
+set ylabel "average reachability change"
+set key top
+set yrange [-0.25:-0.025]
+set output "avg.png"
+plot "wnt/average.out" using 1:2 with line smooth unique title "Wnt",\
+	 "erbb/average.out" using 1:2 with line smooth unique title "ErbB"
+set output
 

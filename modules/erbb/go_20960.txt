@@ -1,0 +1,17 @@
+hsa:815|hsa:816|hsa:817|hsa:818
+hsa:815|hsa:816|hsa:817|hsa:818
+hsa:572
+hsa:572
+hsa:572
+hsa:572
+hsa:572
+hsa:1027
+hsa:1027
+hsa:1026
+hsa:1026
+hsa:1026
+hsa:1026
+hsa:5578|hsa:5579|hsa:5582
+hsa:5578|hsa:5579|hsa:5582
+hsa:25|hsa:27
+hsa:3725

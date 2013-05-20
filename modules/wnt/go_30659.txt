@@ -1,0 +1,5 @@
+hsa:10725|hsa:4772|hsa:4773|hsa:4775|hsa:4776
+hsa:10725|hsa:4772|hsa:4773|hsa:4775|hsa:4776
+hsa:10725|hsa:4772|hsa:4773|hsa:4775|hsa:4776
+hsa:10725|hsa:4772|hsa:4773|hsa:4775|hsa:4776
+hsa:10725|hsa:4772|hsa:4773|hsa:4775|hsa:4776

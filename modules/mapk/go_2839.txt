@@ -1,0 +1,13 @@
+hsa:4790|hsa:4791|hsa:5970|hsa:5971
+hsa:4790|hsa:4791|hsa:5970|hsa:5971
+hsa:4149
+hsa:4149
+hsa:4149
+hsa:4776
+hsa:3725
+hsa:1386
+hsa:1386
+hsa:1386
+hsa:1386
+hsa:1386
+hsa:1386

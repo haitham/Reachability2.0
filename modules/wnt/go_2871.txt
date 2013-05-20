@@ -1,0 +1,7 @@
+hsa:23291|hsa:8945
+hsa:23291|hsa:8945
+hsa:23291|hsa:8945
+hsa:3725
+hsa:595|hsa:894|hsa:896
+hsa:595|hsa:894|hsa:896
+hsa:595|hsa:894|hsa:896

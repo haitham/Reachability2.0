@@ -1,11 +1,11 @@
 set key right
 set size 0.6,0.6
 set style function linespoints
-set xlabel "delta"
+set xlabel "{/Symbol d}"
 set terminal postscript eps  enhanced
 set xrange [0.04:0.52] noreverse
 
-set ylabel "average reachability change"
+set ylabel "{/Symbol D}P_{reach}"
 
 set key top
 set yrange [-0.25:-0.025]

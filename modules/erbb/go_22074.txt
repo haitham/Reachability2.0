@@ -1,0 +1,7 @@
+hsa:6776|hsa:6777
+hsa:6776|hsa:6777
+hsa:6776|hsa:6777
+hsa:5578|hsa:5579|hsa:5582
+hsa:6776|hsa:6777
+hsa:6776|hsa:6777
+hsa:6776|hsa:6777
